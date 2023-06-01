@@ -20,8 +20,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('inscription/', views.inscription, name='inscription'),
-    path('connexion/', views.connexion, name='connexion'),
-    path('deconnexion/', views.deconnexion, name='deconnexion'),
-    path('problemes/', views.ListeProblemesView.as_view(), name='liste_problemes'),
+    path('inscription/', views.Inscription, name='inscription'),
+    path('connexion/', views.Connexion, name='connexion'),
+    #path('deconnexion/', views.deconnexion, name='deconnexion'),
+    #path('problemes/', views.ListeProblemesView.as_view(), name='liste_problemes'),
 ]
